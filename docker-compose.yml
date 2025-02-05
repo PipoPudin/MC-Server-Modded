@@ -3,6 +3,7 @@ services:
     image: chunkloader
     tty: true
     stdin_open: true
+    EULA: "true"
     ports:
       - "35565:25565"
     environment:
