@@ -1,0 +1,20 @@
+services:
+  server:
+    image: chunkloader
+    tty: true
+    stdin_open: true
+    ports:
+      - "35565:25565"
+    environment:
+      EULA: "true"
+      MEMORY: "7G"
+      TYPE: "VANILLA"
+      VERSION: "1.20.4"
+      MOTD: "CL testserver 35566"
+      DIFFICULTY: "hard"
+      MAX_PLAYERS: "10"
+      ONLINE_MODE: "true"
+      
+    volumes:
+      # attach the relative directory 'data' to the container's /data path
+      - ./data:/data
