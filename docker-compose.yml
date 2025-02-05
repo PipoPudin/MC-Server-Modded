@@ -1,6 +1,6 @@
 services:
   server:
-    image: itzg/minecraft-server:stable
+    image: itzg/minecraft-server
     tty: true
     stdin_open: true
     ports:
